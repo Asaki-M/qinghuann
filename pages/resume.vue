@@ -17,20 +17,23 @@
                 <span>邮箱：</span>
                 <span>1041220793@qq.com</span>
             </div>
-            <div class="info_item">
-                <span>学历：</span>
-                <span>本科</span>
-            </div>
-            <div class="info_item">
-                <span>学校：广州大学华软软件学院</span>
-                <span>本科</span>
-            </div>
         </div>
         <div class="avatar_info">
             <img src="/img/avatar.jpg" alt="person avatar">
         </div>
     </header>
     <main>
+        <div class="school_info_container">
+            <div class="title_container">
+                教育经历
+            </div>
+            <ul class="school_info_content">
+                <li>学校：广州大学华软软件学院</li>
+                <li>学历：本科</li>
+                <li>专业：软件工程</li>
+                <li>2018 - 2022</li>
+            </ul>
+        </div>
         <div class="professional_skill_container">
             <div class="title_container">
                 专业技能
@@ -64,9 +67,48 @@
             <div class="title_container">
                 项目经历
             </div>
-            <ul class="info_ul_content">
-                
-            </ul>
+            <div class="project_item_container">
+                <p>UniFi Identity - 优倍快网络技术咨询（上海）有限公司</p>
+                <ul class="project_item_list_container">
+                    <li>
+                        <span>项目描述：</span>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>产品地址：</span>
+                        <ul>
+                            <li>https://ui.com/tw/en/identity</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span> 负责工作内容：</span>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="project_item_container">
+                <p>Playsmart 低代码平台 - 广州汇量信息科技有限公司</p>
+                <ul class="project_item_list_container">
+                    <li>
+                        <span>项目描述：</span>
+                        <ul>
+                            <li>给广告主以及产品经理的实现可互动类型的手机广告页面搭建的平台，提供基础模板以及承包广告上线的流程</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span> 负责工作内容：</span>
+                        <ul>
+                            <li>根据设计稿开发平台功能模块</li>
+                            <li>编写 H5 游戏广告页面，对不同的手机设备进行设配</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
 </template>
@@ -119,6 +161,10 @@ header {
     }
 }
 
+.school_info_container {
+    margin-top: 16px;
+}
+
 .professional_skill_container {
     width: 100%;
     padding: 8px;
@@ -131,11 +177,23 @@ header {
             display: inline-block;
             width: 40%;
         }
+
         span:nth-child(2) {
             display: inline-block;
             width: 20%;
         }
     }
 
+}
+
+.project_item_container {
+    > p {
+        margin: 16px 0 0 0; 
+    }
+    .project_item_list_container {
+        li {
+            padding: 4px 0;
+        }
+    }
 }
 </style>
