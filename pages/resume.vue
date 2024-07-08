@@ -17,35 +17,16 @@
                 <span>邮箱：</span>
                 <span>1041220793@qq.com</span>
             </div>
+            <div class="info_item">
+                <span>学历：</span>
+                <span>本科</span>
+            </div>
         </div>
         <div class="avatar_info">
             <img src="/img/avatar.jpg" alt="person avatar">
         </div>
     </header>
     <main>
-        <div class="school_info_container">
-            <div class="title_container">
-                教育经历
-            </div>
-            <ul class="school_info_content">
-                <li>学校：广州大学华软软件学院</li>
-                <li>学历：本科</li>
-                <li>专业：软件工程</li>
-                <li>2018 - 2022</li>
-            </ul>
-        </div>
-        <div class="professional_skill_container">
-            <div class="title_container">
-                专业技能
-            </div>
-            <ul class="professional_skill_content">
-                <li>熟悉 HTML5 / CSS3 并能完成常用布局</li>
-                <li>熟悉掌握 JavaScript / ES6</li>
-                <li>熟练使用 Vue / React 全家桶开发</li>
-                <li>了解 Nuxtjs 使用</li>
-                <li>掌握 HTTP 和 Web 开发安全等知识以及浏览器相关知识</li>
-            </ul>
-        </div>
         <div class="work_experience_container">
             <div class="title_container">
                 工作经历
@@ -71,16 +52,10 @@
                 <p>UniFi Identity - 优倍快网络技术咨询（上海）有限公司</p>
                 <ul class="project_item_list_container">
                     <li>
-                        <span>项目描述：</span>
-                        <ul>
-                            <li></li>
-                        </ul>
+                        项目描述：
                     </li>
                     <li>
-                        <span>产品地址：</span>
-                        <ul>
-                            <li>https://ui.com/tw/en/identity</li>
-                        </ul>
+                        产品地址： https://ui.com/tw/en/identity
                     </li>
                     <li>
                         <span> 负责工作内容：</span>
@@ -109,6 +84,29 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="professional_skill_container">
+            <div class="title_container">
+                专业技能
+            </div>
+            <ul class="professional_skill_content info_ul_content">
+                <li>熟悉 HTML5 / CSS3 并能完成常用布局</li>
+                <li>熟悉掌握 JavaScript / ES6</li>
+                <li>熟练使用 Vue / React 全家桶开发</li>
+                <li>了解 Nuxtjs 使用</li>
+                <li>掌握 HTTP 和 Web 开发安全等知识以及浏览器相关知识</li>
+            </ul>
+        </div>
+        <div class="school_info_container">
+            <div class="title_container">
+                教育经历
+            </div>
+            <ul class="school_info_content info_ul_content">
+                <li>学校：广州大学华软软件学院</li>
+                <li>学历：本科</li>
+                <li>专业：软件工程</li>
+                <li>2018 - 2022</li>
+            </ul>
         </div>
     </main>
 </template>
@@ -161,17 +159,14 @@ header {
     }
 }
 
-.school_info_container {
-    margin-top: 16px;
-}
-
 .professional_skill_container {
     width: 100%;
     padding: 8px;
-    margin-top: 16px;
 }
 
 .work_experience_container {
+    margin-top: 16px;
+
     .info_ul_content li {
         span:first-child {
             display: inline-block;
@@ -186,13 +181,21 @@ header {
 
 }
 
-.project_item_container {
-    > p {
-        margin: 16px 0 0 0; 
+.project_experience_container {
+    .project_item_container:nth-child(2) {
+        margin-top: 16px;
     }
-    .project_item_list_container {
-        li {
-            padding: 4px 0;
+
+    .project_item_container {
+
+        >p {
+            margin: 0;
+        }
+
+        .project_item_list_container {
+            li {
+                padding: 4px 0;
+            }
         }
     }
 }
