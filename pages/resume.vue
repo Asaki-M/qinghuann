@@ -52,7 +52,7 @@
                 <p>UniFi Identity - 优倍快网络技术咨询（上海）有限公司</p>
                 <ul class="project_item_list_container">
                     <li>
-                        项目描述：
+                        项目描述：一款管理企业设备（门禁）、网络设备、员工信息等服务平台
                     </li>
                     <li>
                         产品地址： https://ui.com/tw/en/identity
@@ -60,8 +60,32 @@
                     <li>
                         <span> 负责工作内容：</span>
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                Wokrflow & Approval 模块：Workflow 部分用于创建相关流程的审批， Approval 部分用于员工使用并提交审批（如请假，加班，采购等）
+                            </li>
+                            <li>
+                                Directory 新 UX 模块：Directory 用于添加人员到该 Workspace，提供手动邮箱邀请，从 Console 中邀请用户，通过 AD/LDAP/Google/Microsoft 等方式邀请用户
+                            </li>
+                            <li>
+                                Systemlog 新 UX 模块：记录 Wokrspace 中各种操作的日志
+                            </li>
+                            <li>
+                                Integration 新 UX 模块：用于连接第三方 APP 数据，如 Slack/Splunk/OfficeRnd 等软件，以及可以配置 ApiToken 和 Webhook
+                            </li>
+                            <li>
+                                MSP 模块：用于设置 Workspace 连接另外一个 Workspace 对应权限的人员，方便另一个 Workspace 的技术人员可以用他们的账号进行登录排查问题
+                            </li>
+                            <li>
+                                Notice 模块：给管理员提供向 Workspace 所有人或者特定的人/组发送通知消息
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        工作成就：
+                        <ul>
+                            <li>实施 PDF 导出并分页添加页眉页脚的方案用在 Approval 上</li>
+                            <li>完善了原有的富文本组件，复用到项目 Notice/Helpdesk/Workflow/Approval 等模块中</li>
+                            <li>发现富文本的一些 XSS 注入问题，修复后并排查出项目各个模块中的 XSS 注入问题</li>
                         </ul>
                     </li>
                 </ul>
