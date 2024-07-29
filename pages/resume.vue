@@ -21,9 +21,13 @@
                 <span>学历：</span>
                 <span>本科</span>
             </div>
+            <div class="info_item">
+                <span>专业：</span>
+                <span>软件工程</span>
+            </div>
         </div>
         <div class="avatar_info">
-            <img src="/img/avatar.jpg" alt="person avatar">
+            <img src="/img/avatar.webp" alt="person avatar">
         </div>
     </header>
     <main>
