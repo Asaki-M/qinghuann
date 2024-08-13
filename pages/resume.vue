@@ -68,13 +68,15 @@
                                 Wokrflow & Approval 模块：Workflow 部分用于创建相关流程的审批， Approval 部分用于员工使用并提交审批（如请假，加班，采购等）
                             </li>
                             <li>
-                                Directory 新 UX 模块：Directory 用于添加人员到该 Workspace，提供手动邮箱邀请，从 Console 中邀请用户，通过 AD/LDAP/Google/Microsoft 等方式邀请用户
+                                Directory 新 UX 模块：Directory 用于添加人员到该 Workspace，提供手动邮箱邀请，从 Console 中邀请用户，通过
+                                AD/LDAP/Google/Microsoft 等方式邀请用户
                             </li>
                             <li>
                                 Systemlog 新 UX 模块：记录 Wokrspace 中各种操作的日志
                             </li>
                             <li>
-                                Integration 新 UX 模块：用于连接第三方 APP 数据，如 Slack/Splunk/OfficeRnd 等软件，以及可以配置 ApiToken 和 Webhook
+                                Integration 新 UX 模块：用于连接第三方 APP 数据，如 Slack/Splunk/OfficeRnd 等软件，以及可以配置 ApiToken 和
+                                Webhook
                             </li>
                             <li>
                                 MSP 模块：用于设置 Workspace 连接另外一个 Workspace 对应权限的人员，方便另一个 Workspace 的技术人员可以用他们的账号进行登录排查问题
@@ -162,7 +164,7 @@ header {
     display: flex;
     align-items: center;
     background-color: #2775b6;
-    padding: 8px;
+    padding: 8px 16px;
     color: #F0f0f0;
 
     .name_info {
@@ -187,13 +189,14 @@ header {
     }
 }
 
-.professional_skill_container {
+.professional_skill_container, .school_info_container {
     width: 100%;
-    padding: 8px;
+    padding: 8px 16px;
 }
 
 .work_experience_container {
     margin-top: 16px;
+    padding: 8px 16px;
 
     .info_ul_content li {
         span:first-child {
@@ -210,6 +213,7 @@ header {
 }
 
 .project_experience_container {
+    padding: 8px 16px;
     .project_item_container:nth-child(2) {
         margin-top: 16px;
     }
