@@ -1,29 +1,21 @@
 <template>
     <header>
         <div class="name_info">
-            <h2>胡杰铭</h2>
-            <p>应聘岗位：前端开发工程师</p>
+            <h2>Jieming Hu</h2>
+            <p>Job Positions: Frontend Developer</p>
         </div>
         <div class="person_info">
             <div class="info_item">
-                <span>年龄：</span>
+                <span>Age:</span>
                 <span>25</span>
             </div>
             <div class="info_item">
-                <span>联系电话：</span>
-                <span>17278718630</span>
+                <span>Phone:</span>
+                <span>+86 17278718630</span>
             </div>
             <div class="info_item">
-                <span>邮箱：</span>
-                <span>1041220793@qq.com</span>
-            </div>
-            <div class="info_item">
-                <span>学历：</span>
-                <span>本科</span>
-            </div>
-            <div class="info_item">
-                <span>专业：</span>
-                <span>软件工程</span>
+                <span>Mail:</span>
+                <span>qinghuanhu@gmail.com</span>
             </div>
         </div>
         <!-- <div class="avatar_info">
@@ -33,40 +25,40 @@
     <main>
         <div class="work_experience_container">
             <div class="title_container">
-                工作经历
+                Work Experience
             </div>
             <ul class="info_ul_content">
                 <li>
-                    <span>优倍快网络技术咨询（上海）有限公司</span>
-                    <span>全职</span>
+                    <span>Ubiquiti</span>
+                    <span>Full Time</span>
                     <span>2022.7 - 2024.6</span>
                 </li>
                 <li>
-                    <span>广州汇量信息科技有限公司</span>
-                    <span>实习</span>
+                    <span>广州汇量信息科技有限公司(Mobvista)</span>
+                    <span>Intern</span>
                     <span>2021.6 - 2021.9</span>
                 </li>
             </ul>
         </div>
         <div class="project_experience_container">
             <div class="title_container">
-                项目经历
+                Project Experience
             </div>
             <div class="project_item_container">
-                <p>UniFi Identity - 优倍快网络技术咨询（上海）有限公司</p>
+                <p>UniFi Identity & UniFi Identity Enterprise - Ubiquiti</p>
                 <ul class="project_item_list_container">
                     <li>
-                        项目描述：一款管理企业设备（门禁）、网络设备、员工信息等服务平台
+                        Description: A  platform that supports Converged Network & Physical Access, Hassle-Free VPN, Password-Free Secure WiFi, and Onboard and offboard with One Click and some on-feature 
                     </li>
                     <li>
-                        产品地址： https://ui.com/tw/en/identity
+                        url: https://ui.com/tw/en/identity
                     </li>
-                    <li>技术栈：React 以及周边生态库</li>
+                    <li>Use Framework: ReactJS and some libraries</li>
                     <li>
-                        <span> 负责工作内容：</span>
+                        <span> Job Description:</span>
                         <ul>
                             <li>
-                                Wokrflow & Approval 模块：Workflow 部分用于创建相关流程的审批， Approval 部分用于员工使用并提交审批（如请假，加班，采购等）
+                                Wokrflow & Approval: Workflow 部分用于创建相关流程的审批， Approval 部分用于员工使用并提交审批（如请假，加班，采购等）
                             </li>
                             <li>
                                 Directory 新 UX 模块：Directory 用于添加人员到该 Workspace，提供手动邮箱邀请，从 Console 中邀请用户，通过
