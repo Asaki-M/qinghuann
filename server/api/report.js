@@ -27,6 +27,14 @@ export default eventHandler(async (req, res) => {
       format: 'A4',
       preferCSSPageSize: true,    // 页面优先级声明CSS
       printBackground: true,      // 是否打印背景，CSS
+      displayHeaderFooter: true,
+      margin: {
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: '10mm'
+      },
+      footerTemplate: '<div></div>',
     }
 
     const result = await page.pdf(pdfConfig); // 生成 PDF 

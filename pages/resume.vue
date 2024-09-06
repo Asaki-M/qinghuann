@@ -31,6 +31,19 @@
         </div> -->
     </header>
     <main>
+        <div class="professional_skill_container">
+            <div class="title_container">
+                专业技能
+            </div>
+            <ul class="professional_skill_content info_ul_content">
+                <li>熟悉 HTML5 / CSS3 并能完成常用布局</li>
+                <li>熟悉掌握 JavaScript / ES6</li>
+                <li>熟练使用 Vue2 / Vue3 / React 框架开发</li>
+                <li>熟练使用 Antd / ElementUI 等组件库快速开发</li>
+                <li>了解 ThreeJS 使用</li>
+                <li>掌握 HTTP 和 Web 开发安全等知识以及浏览器相关知识</li>
+            </ul>
+        </div>
         <div class="work_experience_container">
             <div class="title_container">
                 工作经历
@@ -117,18 +130,6 @@
                 </ul>
             </div>
         </div>
-        <div class="professional_skill_container">
-            <div class="title_container">
-                专业技能
-            </div>
-            <ul class="professional_skill_content info_ul_content">
-                <li>熟悉 HTML5 / CSS3 并能完成常用布局</li>
-                <li>熟悉掌握 JavaScript / ES6</li>
-                <li>熟练使用 Vue / React 全家桶开发</li>
-                <li>了解 Nuxtjs 使用</li>
-                <li>掌握 HTTP 和 Web 开发安全等知识以及浏览器相关知识</li>
-            </ul>
-        </div>
         <div class="school_info_container">
             <div class="title_container">
                 教育经历
@@ -146,6 +147,8 @@
 <style lang="scss" scoped>
 * {
     box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
 
 .title_container {
@@ -168,6 +171,7 @@ header {
     background-color: #2775b6;
     padding: 8px 16px;
     color: #F0f0f0;
+    margin-bottom: 16px;
 
     .name_info {
         width: 40%;
@@ -197,7 +201,6 @@ header {
 }
 
 .work_experience_container {
-    margin-top: 16px;
     padding: 8px 16px;
 
     .info_ul_content li {
