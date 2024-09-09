@@ -3,7 +3,6 @@ import { resolve } from 'path'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
-  extends: ['@nuxt/ui-pro'],
   modules: ['@nuxt/ui'],
   alias: {
     '@utils': resolve('./utils')

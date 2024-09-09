@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/ui-pro": "^1.4.1",
+    "@nuxt/ui": "^2.18.4",
     "nuxt": "^3.11.2",
     "puppeteer": "^23.0.2",
     "sass": "^1.77.6",

@@ -9,9 +9,16 @@
     </div>
   </div>
 
-  <UDashboardModal v-model="isOpen" :title="stlModal?.name || ''">
-    <STLPreview :stlModal="stlModal"></STLPreview>
-  </UDashboardModal>
+  <UModal v-model="isOpen">
+    <div class="modal_container">
+      <div class="modal_header">
+        <p>{{ stlModal?.name || '' }}</p>
+        <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1"
+          @click="handleCloseModal" />
+      </div>
+      <STLPreview :stlModal="stlModal"></STLPreview>
+    </div>
+  </UModal>
 </template>
 
 <script setup>
@@ -20,11 +27,15 @@ import { stllist } from '@utils/stllist';
 const isOpen = ref(false)
 const stlModal = ref(null)
 
-const handleShowModal = (id) => {
-  if (!!id) {
-    stlModal.value = id
+const handleShowModal = (modal) => {
+  if (!!modal) {
+    stlModal.value = modal
     isOpen.value = true
   }
+}
+const handleCloseModal = () => {
+  stlModal.value = null
+  isOpen.value = false
 }
 
 </script>
@@ -48,16 +59,30 @@ const handleShowModal = (id) => {
       border-radius: 16px;
       box-shadow: 0 6px 8px rgba($color: #000000, $alpha: 0.25);
       cursor: pointer;
-      
+
       p {
         width: 100%;
       }
+
       img {
         width: 100%;
         height: 200px;
         border-radius: 20px;
       }
     }
+  }
+}
+
+.modal_container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 </style>

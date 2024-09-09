@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@nuxt/ui-pro':
-        specifier: ^1.4.1
-        version: 1.4.1(focus-trap@7.5.4)(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)
+      '@nuxt/ui':
+        specifier: ^2.18.4
+        version: 2.18.4(focus-trap@7.5.4)(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)
       nuxt:
         specifier: ^3.11.2
         version: 3.11.2(@opentelemetry/api@1.8.0)(@parcel/watcher@2.4.1)(@types/node@20.13.0)(@unocss/reset@0.60.4)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.13.1(magicast@0.3.4)(rollup@4.18.0)(webpack-sources@3.2.3))(vue@3.4.27))(fuse.js@6.6.2)(ioredis@5.4.1)(rollup@4.18.0)(sass@1.77.6)(terser@5.31.0)(unocss@0.60.4(postcss@8.4.38)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0)))(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(webpack-sources@3.2.3)
@@ -402,8 +402,8 @@ packages:
     peerDependencies:
       tailwindcss: ^3.0
 
-  '@headlessui/vue@1.7.22':
-    resolution: {integrity: sha512-Hoffjoolq1rY+LOfJ+B/OvkhuBXXBFgd8oBlN+l1TApma2dB0En0ucFZrwQtb33SmcCqd32EQd0y07oziXWNYg==}
+  '@headlessui/vue@1.7.23':
+    resolution: {integrity: sha512-JzdCNqurrtuu0YW6QaDtR2PIYCKPUWq28csDyMvN4zmGccmE7lz40Is6hc3LA4HFeCI7sekZ/PQMTNmn9I/4Wg==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
@@ -411,11 +411,8 @@ packages:
   '@iconify-json/heroicons@1.2.0':
     resolution: {integrity: sha512-EmvGN0L9EUJCmQ82rkLGZ4tkz0YGQfZV7ugKT6UvHni/bxNitQrD0gLj6NJj2W9zsSoXyNHyCX236+EJmO4pmA==}
 
-  '@iconify-json/vscode-icons@1.2.0':
-    resolution: {integrity: sha512-DjsfialtmFQrJb4pi0P8Vm5+FVmXg8NExThMLwHOGjvMJi9Q89Qw36RpZxw2wEzPFkb19fMje+G0jeSeWol7ZA==}
-
-  '@iconify/collections@1.0.457':
-    resolution: {integrity: sha512-hn1THjlKkFxl8WFkszAWMQRviZqWCSCIPnjov0lWOuG4SWyBmdtTjAnCaWaSZVS9BbpwLAb1444gItnbnWY3Kg==}
+  '@iconify/collections@1.0.458':
+    resolution: {integrity: sha512-xSpTRSiB6jUVHSIasyn4bQXUv+Y79Hxk+xom3IE7BXl8CeRjXjSpOr5BfrRqzVFpXZnUMMWZ6b4DL7J2aaX+aQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -581,9 +578,6 @@ packages:
   '@nuxt/telemetry@2.5.4':
     resolution: {integrity: sha512-KH6wxzsNys69daSO0xUv0LEBAfhwwjK1M+0Cdi1/vxmifCslMIY7lN11B4eywSfscbyVPAYJvANyc7XiVPImBQ==}
     hasBin: true
-
-  '@nuxt/ui-pro@1.4.1':
-    resolution: {integrity: sha512-ab+SNjyWHQTH23/WJD0gDE2p6FoF5zEshij4HFAhkco7x5w1HeGMtyLDUlzDb95zIaxAC+Mj5EP+ytBH/McJrg==}
 
   '@nuxt/ui-templates@1.3.4':
     resolution: {integrity: sha512-zjuslnkj5zboZGis5QpmR5gvRTx5N8Ha/Rll+RRT8YZhXVNBincifhZ9apUQ9f6T0xJE8IHPyVyPx6WokomdYw==}
@@ -2229,9 +2223,6 @@ packages:
   git-url-parse@14.0.0:
     resolution: {integrity: sha512-NnLweV+2A4nCvn4U/m2AoYu0pPKlsmhK9cknG7IMwsjFY1S2jxM+mAhsDxyxfCIGfGaD+dozsyX4b6vkYc83yQ==}
 
-  git-url-parse@14.1.0:
-    resolution: {integrity: sha512-8xg65dTxGHST3+zGpycMMFZcoTzAdZ2dOtu4vmgIfkTFnVHBxHMzBC2L1k8To7EmrSiHesT8JgPLT91VKw1B5g==}
-
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -3654,9 +3645,6 @@ packages:
   smob@1.5.0:
     resolution: {integrity: sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==}
 
-  smooth-dnd@0.12.1:
-    resolution: {integrity: sha512-Dndj/MOG7VP83mvzfGCLGzV2HuK1lWachMtWl/Iuk6zV7noDycIBnflwaPuDzoaapEl3Pc4+ybJArkkx9sxPZg==}
-
   socks-proxy-agent@8.0.3:
     resolution: {integrity: sha512-VNegTZKhuGq5vSD6XNKlbqWhyt/40CgoEw8XxD6dhnm8Jq9IEa3nIa4HwnM8XOqU0CdB0BwWVXusqiFXfHB3+A==}
     engines: {node: '>= 14'}
@@ -4217,11 +4205,6 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
-  vue3-smooth-dnd@0.0.6:
-    resolution: {integrity: sha512-CH9ZZhEfE7qU1ef2rlfgBG+nZtQX8PnWlspB2HDDz1uVGU7fXM0Pr65DftBMz4X81S+edw2H+ZFG6Dyb5J81KA==}
-    peerDependencies:
-      vue: ^3.0.11
-
   vue@3.4.27:
     resolution: {integrity: sha512-8s/56uK6r01r1icG/aEOHqyMVxd1bkYcSe9j8HcKtr/xTOFWvnzIVTehNW+5Yt89f+DLBe4A569pnZLS5HzAMA==}
     peerDependencies:
@@ -4677,7 +4660,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.10
 
-  '@headlessui/vue@1.7.22(vue@3.4.27)':
+  '@headlessui/vue@1.7.23(vue@3.4.27)':
     dependencies:
       '@tanstack/vue-virtual': 3.10.7(vue@3.4.27)
       vue: 3.4.27
@@ -4686,11 +4669,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/vscode-icons@1.2.0':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify/collections@1.0.457':
+  '@iconify/collections@1.0.458':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -4985,7 +4964,7 @@ snapshots:
 
   '@nuxt/icon@1.5.1(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)':
     dependencies:
-      '@iconify/collections': 1.0.457
+      '@iconify/collections': 1.0.458
       '@iconify/types': 2.0.0
       '@iconify/utils': 2.1.32
       '@iconify/vue': 4.1.3-beta.1(vue@3.4.27)
@@ -5116,47 +5095,12 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/ui-pro@1.4.1(focus-trap@7.5.4)(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)':
-    dependencies:
-      '@iconify-json/vscode-icons': 1.2.0
-      '@nuxt/ui': 2.18.4(focus-trap@7.5.4)(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)
-      '@vueuse/core': 10.11.1(vue@3.4.27)
-      defu: 6.1.4
-      git-url-parse: 14.1.0
-      ofetch: 1.3.4
-      parse-git-config: 3.0.0
-      pathe: 1.1.2
-      pkg-types: 1.2.0
-      tailwind-merge: 2.5.2
-      vue3-smooth-dnd: 0.0.6(vue@3.4.27)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - async-validator
-      - axios
-      - change-case
-      - drauu
-      - focus-trap
-      - idb-keyval
-      - jwt-decode
-      - magicast
-      - nprogress
-      - qrcode
-      - rollup
-      - sortablejs
-      - supports-color
-      - ts-node
-      - uWebSockets.js
-      - universal-cookie
-      - vite
-      - vue
-      - webpack-sources
-
   '@nuxt/ui-templates@1.3.4': {}
 
   '@nuxt/ui@2.18.4(focus-trap@7.5.4)(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)':
     dependencies:
       '@headlessui/tailwindcss': 0.2.1(tailwindcss@3.4.10)
-      '@headlessui/vue': 1.7.22(vue@3.4.27)
+      '@headlessui/vue': 1.7.23(vue@3.4.27)
       '@iconify-json/heroicons': 1.2.0
       '@nuxt/icon': 1.5.1(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)
       '@nuxt/kit': 3.13.1(magicast@0.3.4)(rollup@4.18.0)(webpack-sources@3.2.3)
@@ -7014,10 +6958,6 @@ snapshots:
     dependencies:
       git-up: 7.0.0
 
-  git-url-parse@14.1.0:
-    dependencies:
-      git-up: 7.0.0
-
   glob-parent@5.1.2:
     dependencies:
       is-glob: 4.0.3
@@ -8714,8 +8654,6 @@ snapshots:
 
   smob@1.5.0: {}
 
-  smooth-dnd@0.12.1: {}
-
   socks-proxy-agent@8.0.3:
     dependencies:
       agent-base: 7.1.1
@@ -8892,7 +8830,7 @@ snapshots:
       fast-glob: 3.3.2
       glob-parent: 6.0.2
       is-glob: 4.0.3
-      jiti: 1.21.0
+      jiti: 1.21.6
       lilconfig: 2.1.0
       micromatch: 4.0.7
       normalize-path: 3.0.0
@@ -9359,11 +9297,6 @@ snapshots:
       vue: 3.4.27
       vue-observe-visibility: 2.0.0-alpha.1(vue@3.4.27)
       vue-resize: 2.0.0-alpha.1(vue@3.4.27)
-
-  vue3-smooth-dnd@0.0.6(vue@3.4.27):
-    dependencies:
-      smooth-dnd: 0.12.1
-      vue: 3.4.27
 
   vue@3.4.27:
     dependencies:
