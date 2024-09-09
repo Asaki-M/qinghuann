@@ -2,7 +2,7 @@
   <div class="navigator-container">
     <NuxtLink class="navigator-item" to="/">首页</NuxtLink>
     <NuxtLink class="navigator-item" to="/blog">博客</NuxtLink>
-    <NuxtLink class="navigator-item" to="/tool">开发工具</NuxtLink>
+    <NuxtLink class="navigator-item" to="/tool">工具</NuxtLink>
     <NuxtLink class="navigator-item" to="/3d-printing">3D打印</NuxtLink>
     <NuxtLink class="navigator-item" to="/daily">日常</NuxtLink>
   </div>

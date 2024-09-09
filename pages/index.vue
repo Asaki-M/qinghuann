@@ -30,7 +30,7 @@
 
     .welcome-content {
         width: 100%;
-        height: 40%;
+        height: 50%;
         position: absolute;
         bottom: 0;
         color: #fff;

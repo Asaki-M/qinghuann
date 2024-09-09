@@ -1,7 +1,13 @@
+import { resolve } from 'path'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
+  extends: ['@nuxt/ui-pro'],
+  modules: ['@nuxt/ui'],
+  alias: {
+    '@utils': resolve('./utils')
+  },
   app: {
     head: {
       link: [
