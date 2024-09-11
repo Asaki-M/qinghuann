@@ -1,5 +1,9 @@
 <template>
-  <div ref="container" class="container"></div>
+  <div class="wrapper">
+    <Loading :isLoading="isLoading">
+      <div ref="container" class="container"></div>
+    </Loading>
+  </div>
 </template>
 
 <script setup>
@@ -7,12 +11,15 @@ import * as THREE from 'three'
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
-const props = defineProps(['stlModal'])
+const props = defineProps(['stlModel'])
 const container = ref(null)
+const isLoading = ref(false)
 
 const renderer = new THREE.WebGLRenderer();
 
 onMounted(() => {
+  isLoading.value = true
+
   const width = container.value.clientWidth,
     height = container.value.clientHeight
 
@@ -40,22 +47,6 @@ onMounted(() => {
   controls.enablePan = true;
   controls.panSpeed = 1;
 
-  const stlPath = props.stlModal.pathname,
-    stlScale = props.stlModal.scale
-  const stlLoader = new STLLoader()
-  stlLoader.load(`/3d-preview/${stlPath}`, (geometry) => {
-    geometry.center()
-    const material = new THREE.MeshPhongMaterial({ color: 0xbebebe });
-    const mesh = new THREE.Mesh(geometry, material);
-
-
-    mesh.scale.set(stlScale, stlScale, stlScale)
-    scene.add(mesh);
-  }, undefined, (error) => {
-    console.log(error)
-  })
-
-
   function animate() {
     requestAnimationFrame(animate);
     // 光源跟随相机
@@ -65,6 +56,30 @@ onMounted(() => {
     renderer.render(scene, camera);
   }
   animate()
+
+  // load stl model
+  const stlPath = props.stlModel.pathname,
+    stlScale = props.stlModel.scale
+  const stlLoader = new STLLoader()
+  stlLoader.load(
+    `/3d-preview/${stlPath}`,
+    (geometry) => {
+      setTimeout(() => {
+        isLoading.value = false
+      }, 300)
+
+      geometry.center()
+      const material = new THREE.MeshPhongMaterial({ color: 0xbebebe });
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.scale.set(stlScale, stlScale, stlScale)
+
+      scene.add(mesh);
+    },
+    undefined,
+    (error) => {
+      console.log(error)
+      isLoading.value = false
+    })
 })
 
 onUnmounted(() => {
@@ -76,6 +91,10 @@ onUnmounted(() => {
 </script>
 
 <style scoped lang='scss'>
+.wrapper {
+  width: 100%;
+  height: 500px;
+}
 .container {
   width: 100%;
   height: 500px;

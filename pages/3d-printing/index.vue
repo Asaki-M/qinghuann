@@ -12,11 +12,11 @@
   <UModal v-model="isOpen">
     <div class="modal_container">
       <div class="modal_header">
-        <p>{{ stlModal?.name || '' }}</p>
+        <p>{{ stlModel?.name || '' }}</p>
         <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1"
           @click="handleCloseModal" />
       </div>
-      <STLPreview :stlModal="stlModal"></STLPreview>
+      <STLPreview :stlModel="stlModel"></STLPreview>
     </div>
   </UModal>
 </template>
@@ -25,16 +25,16 @@
 import { stllist } from '@utils/stllist';
 
 const isOpen = ref(false)
-const stlModal = ref(null)
+const stlModel = ref(null)
 
 const handleShowModal = (modal) => {
   if (!!modal) {
-    stlModal.value = modal
+    stlModel.value = modal
     isOpen.value = true
   }
 }
 const handleCloseModal = () => {
-  stlModal.value = null
+  stlModel.value = null
   isOpen.value = false
 }
 
