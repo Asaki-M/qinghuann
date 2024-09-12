@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@chinese-fonts/yzgcxst':
-        specifier: ^2.0.1
-        version: 2.0.1
       '@nuxt/ui':
         specifier: ^2.18.4
         version: 2.18.4(focus-trap@7.5.4)(magicast@0.3.4)(rollup@4.18.0)(vite@5.2.12(@types/node@20.13.0)(sass@1.77.6)(terser@5.31.0))(vue@3.4.27)(webpack-sources@3.2.3)
@@ -231,9 +228,6 @@ packages:
   '@babel/types@7.24.6':
     resolution: {integrity: sha512-WaMsgi6Q8zMgMth93GvWPXkhAIEobfsIkLTacoVZoK1J0CevIPGYY2Vo5YvJGqyHqXM6P4ppOYGsIRU8MM9pFQ==}
     engines: {node: '>=6.9.0'}
-
-  '@chinese-fonts/yzgcxst@2.0.1':
-    resolution: {integrity: sha512-JmAOuM6MT64e1NLqKEBXpiYiDv4NRNqIHhpLUQS00IVXi88pfgAPmFupSWYijHuZ3ShxVx9UCtMDTwQ/OtVvFQ==}
 
   '@cloudflare/kv-asset-handler@0.3.2':
     resolution: {integrity: sha512-EeEjMobfuJrwoctj7FA1y1KEbM0+Q1xSjobIEyie9k4haVEBB7vkDvsasw1pM3rO39mL2akxIAzLMUAtrMHZhA==}
@@ -4568,8 +4562,6 @@ snapshots:
       '@babel/helper-string-parser': 7.24.6
       '@babel/helper-validator-identifier': 7.24.6
       to-fast-properties: 2.0.0
-
-  '@chinese-fonts/yzgcxst@2.0.1': {}
 
   '@cloudflare/kv-asset-handler@0.3.2':
     dependencies:

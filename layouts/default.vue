@@ -5,8 +5,6 @@
   </div>
 </template>
 
-<script setup></script>
-
 <style scoped lang='scss'>
 .content {
   width: 100vw;

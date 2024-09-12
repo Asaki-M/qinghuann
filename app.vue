@@ -1,11 +1,11 @@
 <template>
+  <NuxtLoadingIndicator></NuxtLoadingIndicator>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>
 
 <script setup>
-import '@chinese-fonts/yzgcxst/dist/也字工厂小石头/result.css'
 </script>
 <style>
 body {

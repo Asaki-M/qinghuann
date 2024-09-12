@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@chinese-fonts/yzgcxst": "^2.0.1",
     "@nuxt/ui": "^2.18.4",
     "nuxt": "^3.11.2",
     "puppeteer": "^23.0.2",
