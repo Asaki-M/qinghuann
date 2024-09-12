@@ -1,18 +1,7 @@
 <template>
   <div class="loading_container" v-show="props.isLoading">
     <img :src="loadingIcon" alt="Loading" class="loading_logo">
-    <div class="bounce_text_container">
-      <span class="bounce_letter">L</span>
-      <span class="bounce_letter">o</span>
-      <span class="bounce_letter">a</span>
-      <span class="bounce_letter">d</span>
-      <span class="bounce_letter">i</span>
-      <span class="bounce_letter">n</span>
-      <span class="bounce_letter">g</span>
-      <span class="bounce_letter">.</span>
-      <span class="bounce_letter">.</span>
-      <span class="bounce_letter">.</span>
-    </div>
+    <BounceLetter message="Loading..."></BounceLetter>
   </div>
   <div v-show="!props.isLoading">
     <slot></slot>

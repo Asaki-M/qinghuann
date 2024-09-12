@@ -1,6 +1,5 @@
 <template>
-  <Nav></Nav>
-  <div class="content">
+  <div class="model_list_content custom-scrollbar">
     <div class="stl_list_container">
       <div class="stl_item" v-for="stl in stllist" :key="stl.pathname" @click="() => handleShowModal(stl)">
         <p>{{ stl.name }}</p>
@@ -41,8 +40,11 @@ const handleCloseModal = () => {
 </script>
 
 <style scoped lang="scss">
-.content {
+.model_list_content {
+  overflow-x: hidden;
+  overflow-y: auto;
   width: 100vw;
+  height: 100%;
   display: flex;
   justify-content: center;
 
@@ -51,7 +53,6 @@ const handleCloseModal = () => {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     gap: 32px;
-    grid-auto-rows: minmax(100px, auto);
 
     .stl_item {
       padding: 12px;
@@ -59,6 +60,7 @@ const handleCloseModal = () => {
       border-radius: 16px;
       box-shadow: 0 6px 8px rgba($color: #000000, $alpha: 0.25);
       cursor: pointer;
+      background-color: #fff;
 
       p {
         width: 100%;
