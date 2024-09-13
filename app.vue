@@ -8,7 +8,6 @@
 <script setup>
 const nuxtApp = useNuxtApp()
 onMounted(async () => {
-  nuxtApp.$assetsLoading.show()
   await nuxtApp.$assetsLoading.loadAssets()
   nuxtApp.$assetsLoading.hide()
 })
