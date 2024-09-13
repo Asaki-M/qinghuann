@@ -1,11 +1,17 @@
 <template>
-  <NuxtLoadingIndicator></NuxtLoadingIndicator>
+  <InitLoading :show="nuxtApp.$assetsLoading.isLoading" />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>
 
 <script setup>
+const nuxtApp = useNuxtApp()
+onMounted(async () => {
+  nuxtApp.$assetsLoading.show()
+  await nuxtApp.$assetsLoading.loadAssets()
+  nuxtApp.$assetsLoading.hide()
+})
 </script>
 <style>
 body {

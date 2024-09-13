@@ -10,7 +10,7 @@
   width: 100vw;
   height: 95vh;
   overflow: hidden;
-  background-image: url('~/assets/background.png');
+  background-image: url('/img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

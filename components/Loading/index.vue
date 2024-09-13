@@ -1,7 +1,7 @@
 <template>
   <div class="loading_container" v-show="props.isLoading">
     <img :src="loadingIcon" alt="Loading" class="loading_logo">
-    <BounceLetter message="Loading..."></BounceLetter>
+    <BounceLetter :message="props.message"></BounceLetter>
   </div>
   <div v-show="!props.isLoading">
     <slot></slot>
@@ -10,9 +10,16 @@
 
 <script setup>
 import { loadingIcon } from './loading-icon';
-// TODO: use props loading message
-
-const props = defineProps(['isLoading'])
+const props = defineProps({
+  isLoading: {
+    type: Boolean,
+    default: false
+  },
+  message: {
+    type: String,
+    default: 'Loading...'
+  }
+})
 </script>
 
 <style scoped lang='scss'>
