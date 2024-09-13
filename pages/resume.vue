@@ -144,6 +144,12 @@
     </main>
 </template>
 
+<script setup>
+    definePageMeta({
+        layout: 'empty-layout'
+    })
+</script>
+
 <style lang="scss" scoped>
 * {
     box-sizing: border-box;
