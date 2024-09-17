@@ -6,7 +6,10 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/image'],
   content: {
     markdown: {
-      anchorLinks: false // 禁用标题自动生成锚点链接
+      anchorLinks: false,
+      tags: {
+        img: 'ProseImg'
+      }
     }
   },
   css: [
