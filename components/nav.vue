@@ -1,15 +1,42 @@
 <template>
   <div class="navigator-container">
-    <NuxtLink class="navigator-item" to="/">首页</NuxtLink>
-    <NuxtLink class="navigator-item" to="/blog">博客</NuxtLink>
-    <NuxtLink class="navigator-item" to="/tool">工具</NuxtLink>
-    <NuxtLink class="navigator-item" to="/3d-printing">3D打印</NuxtLink>
-    <NuxtLink class="navigator-item" to="/daily">日常</NuxtLink>
+    <NuxtLink class="navigator-item" :class="{ active: isActive(item.path) }" :to="item.path"
+      v-for="item in routesConfig" :key="item.path">{{ item.name }}</NuxtLink>
   </div>
 </template>
 
 <script setup>
+const routesConfig = [
+  {
+    path: '/',
+    name: '首页'
+  },
+  {
+    path: '/blog',
+    name: '博客'
+  },
+  {
+    path: '/tool',
+    name: '工具'
+  },
+  {
+    path: '/3d-printing',
+    name: '3D打印'
+  },
+  {
+    path: '/daily',
+    name: '日常'
+  },
+]
+const route = useRoute()
 
+
+const isActive = (path) => {
+  if (path === '/') {
+    return route.path === '/'
+  }
+  return route.path.startsWith(path)
+}
 </script>
 
 <style lang="scss" scoped>
@@ -31,7 +58,8 @@
     text-decoration: none;
     color: #434470;
 
-    &.router-link-active {
+    &.router-link-active,
+    &.active {
       color: #5698c3;
       background-color: rgba($color: #5698c3, $alpha: 0.07);
     }

@@ -9,8 +9,14 @@
 const nuxtApp = useNuxtApp()
 onMounted(async () => {
   nuxtApp.$assetsLoading.show()
-  await nuxtApp.$assetsLoading.loadAssets()
-  nuxtApp.$assetsLoading.hide()
+  try {
+    await nuxtApp.$assetsLoading.loadAssets()
+  } catch (error) {
+    // console.log(error)
+  }
+  setTimeout(() => {
+    nuxtApp.$assetsLoading.hide()
+  }, 300)
 })
 </script>
 <style>

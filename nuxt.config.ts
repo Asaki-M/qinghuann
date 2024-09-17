@@ -3,7 +3,12 @@ import { resolve } from 'path'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: true,
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', '@nuxt/content', '@nuxt/image'],
+  content: {
+    markdown: {
+      anchorLinks: false // 禁用标题自动生成锚点链接
+    }
+  },
   css: [
     '~/assets/styles/common.scss'
   ],
