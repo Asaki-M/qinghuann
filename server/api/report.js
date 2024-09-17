@@ -27,7 +27,7 @@ export default eventHandler(async (req, res) => {
       format: 'A4',
       preferCSSPageSize: true,    // 页面优先级声明CSS
       printBackground: true,      // 是否打印背景，CSS
-      displayHeaderFooter: true,
+      displayHeaderFooter: false,
       margin: {
         top: 0,
         left: 0,

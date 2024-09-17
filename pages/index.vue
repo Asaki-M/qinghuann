@@ -1,6 +1,6 @@
 <template>
     <div class="welcome-content">
-        <div class="title">
+        <div class="title" @click="onExportResume">
             清欢杂记
         </div>
         <div class="description">

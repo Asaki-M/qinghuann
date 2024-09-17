@@ -15,18 +15,18 @@ const routesConfig = [
     path: '/blog',
     name: '博客'
   },
-  {
-    path: '/tool',
-    name: '工具'
-  },
+  // {
+  //   path: '/tool',
+  //   name: '工具'
+  // },
   {
     path: '/3d-printing',
     name: '3D打印'
   },
-  {
-    path: '/daily',
-    name: '日常'
-  },
+  // {
+  //   path: '/daily',
+  //   name: '日常'
+  // },
 ]
 const route = useRoute()
 
