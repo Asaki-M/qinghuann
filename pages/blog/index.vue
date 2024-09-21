@@ -1,8 +1,8 @@
 <template>
-  <div class="blogs_container">
+  <div class="blogs_container custom-scrollbar">
     <ContentList path="/">
       <template #default="{ list }">
-        <div class="blog_item fge-container" v-for="article in list" :key="article._path"
+        <div class="blog_item fge-container" v-for="article in list.reverse()" :key="article._path"
           @click="() => handleOpenDoc(article)">
           <h2 class="title">{{ article.title }}</h2>
           <p class="description">{{ article.description }}</p>
