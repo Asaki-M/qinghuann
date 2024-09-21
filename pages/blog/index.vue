@@ -1,8 +1,8 @@
 <template>
   <div class="blogs_container custom-scrollbar">
-    <ContentList path="/">
+    <ContentList :query="query">
       <template #default="{ list }">
-        <div class="blog_item fge-container" v-for="article in list.reverse()" :key="article._path"
+        <div class="blog_item fge-container" v-for="article in list" :key="article._path"
           @click="() => handleOpenDoc(article)">
           <h2 class="title">{{ article.title }}</h2>
           <p class="description">{{ article.description }}</p>
@@ -16,6 +16,8 @@
 </template>
 <script setup>
 const router = useRouter()
+
+const query = { path: '/', sort: [{ date: -1 }] }
 
 const handleOpenDoc = (article) => {
   router.push({ path: `/blog${article._path}` })

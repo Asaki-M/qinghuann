@@ -1,6 +1,7 @@
 ---
 title: 基于 vite 搭建 vue3-ts-pinia-elementplus 项目
 description: 本文用于记录下 Vite 搭建 Vue3 + TS 项目并且添加 Element Plus UI 库以及 Pinia 管理数据状态并对其初始化一个配置 
+date: 2022-06-22
 ---
 
 ## 文章创建的项目地址
