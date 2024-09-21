@@ -56,7 +56,7 @@ const handleCloseModal = () => {
 
     .stl_item {
       padding: 12px;
-      height: 250px;
+      height: fit-content;
       border-radius: 16px;
       box-shadow: 0 6px 8px rgba($color: #000000, $alpha: 0.25);
       cursor: pointer;
@@ -68,7 +68,6 @@ const handleCloseModal = () => {
 
       img {
         width: 100%;
-        height: 200px;
         border-radius: 20px;
       }
     }
