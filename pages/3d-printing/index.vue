@@ -40,50 +40,6 @@ const handleCloseModal = () => {
 </script>
 
 <style scoped lang="scss">
-.model_list_content {
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+@import './index.scss';
 
-  .stl_list_container {
-    margin: 24px auto 0;
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    gap: 32px;
-
-    .stl_item {
-      padding: 12px;
-      height: fit-content;
-      border-radius: 16px;
-      box-shadow: 0 6px 8px rgba($color: #000000, $alpha: 0.25);
-      cursor: pointer;
-      background-color: #fff;
-
-      p {
-        width: 100%;
-      }
-
-      img {
-        width: 100%;
-        border-radius: 20px;
-      }
-    }
-  }
-}
-
-.modal_container {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  .modal_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 </style>
