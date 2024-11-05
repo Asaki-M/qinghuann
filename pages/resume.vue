@@ -1,7 +1,7 @@
 <template>
     <header class="px-5 pt-5">
         <h1 class="text-3xl font-bold">胡杰铭</h1>
-        <div class="info-container flex-x-sb ">
+        <div class="info-container flex-x-sb mt-6">
             <div class="person-info">
                 <p class="text-base">性别: 男</p>
                 <p class="text-base">求职：前端开发工程师</p>
@@ -10,7 +10,7 @@
                 <p class="text-base">联系电话: 17278718630</p>
                 <p class="text-base">邮箱: 1041220793@qq.com</p>
             </div>
-            <img src="/img/avatar.jpg" class="w-28">
+            <!-- <img src="/img/avatar.jpg" class="w-28"> -->
         </div>
     </header>
     <main class="px-5 pt-5">
@@ -18,14 +18,13 @@
             <div class="text-sky-600 text-2xl divide-y-reverse mb-2 font-bold">专业技能</div>
             <UDivider size="sm" />
             <ul class="ul-container pl-7 pt-5">
-                <li class="text-base">熟悉 HTML5 / CSS3 并能完成常用布局</li>
-                <li class="text-base">熟悉掌握 JavaScript / ES6</li>
-                <li class="text-base">熟练使用 Vue2 / Vue3 / React 框架开发</li>
+                <li class="text-base">熟悉掌握 JS / TS</li>
+                <li class="text-base">熟练使用 Vue2 / Vue3 / React 框架开发，并能独立封装组件</li>
                 <li class="text-base">熟练使用 Antd / ElementUI 等组件库快速开发</li>
-                <li class="text-base">掌握 HTTP 和 Web 开发安全等知识以及浏览器相关知识</li>
                 <li class="text-base">熟悉 Git 代码管理</li>
-                <li class="text-base">了解 ThreeJS 使用</li>
-                <li class="text-base">了解 NuxtJs 服务器渲染, UniApp 小程序开发</li>
+                <li class="text-base">了解 Vite 构建工具，能独立使用构建并打包</li>
+                <li class="text-base">了解 Nodejs 以及能使用 express 编写 BFF 层服务</li>
+                <li class="text-base">了解 ThreeJS 使用, UniApp 小程序开发</li>
             </ul>
         </div>
 
@@ -37,28 +36,26 @@
                     <span class="font-bold">优倍快网络技术咨询（上海）有限公司 - 全职</span>
                     <span>2022.7 - 2024.6</span>
                 </p>
-                <p class="text-base pl-5 pt-2">技术栈： React + Redux + React Router</p>
-                <p class="text-base pl-5 pt-2">产品描述： 一款管理企业设备(门禁、车位充电、摄像头等)、网络设备(VPN、Wifi)、员工信息(考勤打卡、请假加班申请等) 集成服务平台</p>
+                <p class="text-base pl-5 pt-2">技术栈： React + Redux + React Router + 自研组件库(ui-components - 私包)</p>
+                <p class="text-base pl-5 pt-2">产品描述： 一款管理企业设备(门禁、车位充电、摄像头等)、网络设备(VPN、Wifi)、员工信息(考勤打卡、请假加班申请等) 集成企业级服务平台
+                </p>
                 <p class="text-base pl-5 pt-2">产品地址： <a class="text-sky-500" target="_blank"
                         href="https://ui.com/tw/en/identity">https://ui.com/tw/en/identity</a></p>
                 <p class="text-base pl-5 pt-2">负责工作内容：</p>
                 <ul class="ul-container pl-14">
-                    <li class="text-base">负责平台部分模块的新 UX 开发以及维护旧模块功能，如 Directory 新 UX 模块 ( 邀请用户加入 ), Systemlog 新 UX 模块 (
-                        记录平台操作日志 ), Integration 新 UX 模块(连接第三方应用与平台同步数据), Notice 模块 ( 平台通知消息 ), Wokrflow & Approval 模块 (
-                        创建加班，请假，采购等审批表单 )</li>
+                    <li class="text-base">负责平台部分模块的新 UX 开发以及维护旧模块功能</li>
                     <li class="text-base">参与负责模块功能测试，及时修复在测试和验收过程中发现的 Bug ，保障项目的稳定性和可靠性</li>
                     <li class="text-base">参与功能需求分析，确定方案设计方案以及代码实现设计</li>
                 </ul>
                 <p class="text-base pl-5 pt-2">工作成就：</p>
                 <ul class="ul-container pl-14">
-                    <li class="text-base">实施 PDF 导出并分页添加页眉页脚的方案用在 Approval 上</li>
-                    <li class="text-base">完善了原有的富文本组件，增加 @ 人、表情、图片上传并排序等功能，并复用到项目 Notice/Helpdesk/Workflow/Approval 等模块中
-                    </li>
+                    <li class="text-base">实施 PDF 导出方案，解决分页内容截断问题，以及自定义添加页眉页脚</li>
+                    <li class="text-base">完善了原有的富文本组件，增加 @ 人、表情、图片上传并排序等功能，并复用到项目各个模块中</li>
                     <li class="text-base">发现富文本的一些 XSS 注入问题，修复后并排查出项目各个模块中的 XSS 注入问题</li>
                 </ul>
             </div>
             <!-- pdf divide page -->
-            <div class="pt-16"></div>
+            <!-- <div style="height: 20vh;"></div> -->
             <div class="pt-5">
                 <p class="flex-x-sb text-lg">
                     <span class="font-bold">广州汇量信息科技有限公司 - 实习</span>
@@ -79,7 +76,33 @@
             <UDivider size="sm" />
             <div class="pt-5">
                 <p class="font-bold text-lg">
-                   清欢杂记 - 个人网站
+                    vite-plugin-auto-import-styles - 插件
+                </p>
+                <p class="text-base pl-5 pt-2">技术栈： Typescript</p>
+                <p class="text-base pl-5 pt-2">Github: <a class="text-sky-500" target="_blank"
+                        href="https://github.com/Asaki-M/vite-plugin-auto-import-styles">https://github.com/Asaki-M/vite-plugin-auto-import-styles</a>
+                </p>
+                <p class="text-base pl-5 pt-2">描述：</p>
+                <ul class="ul-container pl-14">
+                    <li class="text-base">自动导入同目录下同名样式文件，删除或者改名样式文件可以自动移除导入语句，方便开发</li>
+                </ul>
+            </div>
+            <div class="pt-5">
+                <p class="font-bold text-lg">
+                    vite-plugin-svg-manage - 插件
+                </p>
+                <p class="text-base pl-5 pt-2">技术栈： Vue3 + Typescript</p>
+                <p class="text-base pl-5 pt-2">Github:  <a class="text-sky-500" target="_blank"
+                        href="https://github.com/Asaki-M/vite-plugin-svg-manage">https://github.com/Asaki-M/vite-plugin-svg-manage</a></p>
+                <p class="text-base pl-5 pt-2">描述：</p>
+                <ul class="ul-container pl-14">
+                    <li class="text-base">管理本地开发项目下的 SVG 文件，方便解决多人开发中 SVG 图标紊乱问题</li>
+                    <li class="text-base">对比上传 SVG 与本地已有 SVG 能更好的解决相同图标存在问题</li>
+                </ul>
+            </div>
+            <div class="pt-5">
+                <p class="font-bold text-lg">
+                    清欢杂记 - 个人网站
                 </p>
                 <p class="text-base pl-5 pt-2">技术栈： Vue3 + NuxtJS(相关生态库) + ThreeJS</p>
                 <p class="text-base pl-5 pt-2">网站地址： <a class="text-sky-500" target="_blank"
